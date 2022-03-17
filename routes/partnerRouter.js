@@ -10,7 +10,7 @@ partnerRouter.route('/')
         next();
     })
     .get((req, res) => {
-        res.end('Will send all the partners to you');
+        res.end('Making changes so as to test nodemon.');
     })
     .post((req, res) => {
         res.end(`Will send the partner: ${req.body.name} with description: ${req.body.description}`);

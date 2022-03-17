@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', campsiteRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
 // adding app.use for my added routers this tells app to use these routers on the passed in paths
 app.use('/campsites', campsiteRouter);
